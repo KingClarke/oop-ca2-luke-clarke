@@ -170,9 +170,6 @@ public class Question1 {    // Interfaces
         }
     }
 
-
-
-
 }
 
 
