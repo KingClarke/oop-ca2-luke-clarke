@@ -11,7 +11,6 @@ public class Question3  {   //Nested HTML (Stack)
     /*
 filename: name of the file to test.
 */
-
     public static boolean validate(String filename) throws FileNotFoundException {
         Scanner scanner = new Scanner(filename);
         Stack<String> stack = new Stack<>();
@@ -20,11 +19,9 @@ filename: name of the file to test.
         while (scanner.hasNext()) {
             String tag = scanner.next();
 
-            // Check if it's an opening tag
             if (isOpeningTag(tag)) {
                 stack.push(tag);
             }
-            // Check if it's a closing tag
             else if (isClosingTag(tag)) {
                 if (stack.isEmpty() || !matches(stack.pop(), tag)) {
                     isValid = false;
