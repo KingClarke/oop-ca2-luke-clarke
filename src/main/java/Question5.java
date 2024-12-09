@@ -39,9 +39,11 @@ public class Question5 {
         fileScanner.close();
         System.out.println("Identifiers and their counts:");
         for (String identifier : identifierCountMap.keySet()) {
+
             System.out.println(identifier);
             System.out.println(identifierCountMap.get(identifier));
             List<String> lines = identifierLinesMap.get(identifier);
+
             if (lines != null) {
                 for (String line : lines) {
                     System.out.println(line);
@@ -51,6 +53,6 @@ public class Question5 {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        readFile("C:\\Users\\lukep\\IdeaProjects\\oop-ca-luke-clarke\\src\\main\\java\\Question1.java"); // Adjust the path to match the location of the source file
+        readFile("C:\\Users\\lukep\\IdeaProjects\\oop-ca-luke-clarke\\src\\main\\java\\Question1.java"); // Adjust the path to match the location of the source file - exact location seems to be needed
     }
 }
